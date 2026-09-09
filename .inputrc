@@ -1,0 +1,3 @@
+set visible-stats on
+set colored-stats on
+# readline options for tab completion (bash-completion)
