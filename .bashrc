@@ -24,6 +24,11 @@ export PS1='\[\033[1;34m\]┌──[\[\033[0;36m\]\A\[\033[1;34m\]]─[\[\033[0m
 # stolen PS1 from ParrotOS
 export PATH="$HOME/.local/bin:$PATH"
 
+shopt -s autocd        # forget 'cd' still go into dir
+shopt -s cdspell       # fix minor typos in cd
+shopt -s dirspell      # same during completions
+shopt -s globstar      # ** recursive globs
+
 if ! shopt -oq posix; then
 	if [[ -r /usr/share/bash-completion/bash_completion ]]; then
 		. /usr/share/bash-completion/bash_completion
